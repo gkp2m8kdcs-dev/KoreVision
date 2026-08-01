@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#05060d" />
+    <title>Privacy Policy — KoreVision</title>
+    <meta name="description" content="KoreVision privacy policy. KoreVision collects no personal data, runs every calculation on-device, and stores inputs only in local UserDefaults." />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23050610'/%3E%3Ctext x='50%25' y='58%25' font-family='Helvetica' font-size='34' font-weight='800' fill='%2300d4ff' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="cyber-bg"></div>
+
+    <header class="site-header">
+        <div class="container nav-row">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">K</span>
+                <span class="brand-name">KoreVision</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#numbers">Numbers</a>
+                <a href="index.html#modes">Modes</a>
+                <a href="privacy.html" class="active">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="support.html">Support</a>
+                <a class="cta-pill" href="index.html#download">Download</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="legal-main">
+        <section class="legal-hero">
+            <div class="container">
+                <span class="tag">// LAST UPDATED · v1.0.0</span>
+                <h1 class="legal-title"><span class="grad">Privacy Policy</span></h1>
+                <p class="legal-lead">
+                    KoreVision is built around a simple promise: <strong>we collect nothing about you.</strong>
+                    Everything the app does happens locally on your device. This page explains,
+                    in plain English, exactly what the app stores, what it never stores, and
+                    what rights you have.
+                </p>
+            </div>
+        </section>
+
+        <section class="legal-body">
+            <div class="container legal-grid">
+
+                <aside class="legal-toc">
+                    <h4>Contents</h4>
+                    <ol>
+                        <li><a href="#summary">Summary</a></li>
+                        <li><a href="#data-we-collect">Data we collect</a></li>
+                        <li><a href="#data-we-do-not">Data we never collect</a></li>
+                        <li><a href="#local-storage">Local storage details</a></li>
+                        <li><a href="#analytics">Analytics &amp; tracking</a></li>
+                        <li><a href="#third-parties">Third-party services</a></li>
+                        <li><a href="#children">Children's privacy</a></li>
+                        <li><a href="#your-rights">Your rights &amp; controls</a></li>
+                        <li><a href="#international">International users</a></li>
+                        <li><a href="#changes">Changes to this policy</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ol>
+                </aside>
+
+                <article class="legal-article">
+
+                    <section id="summary">
+                        <h2>01 · Summary</h2>
+                        <ul class="check-list">
+                            <li>No personal data is collected, transmitted, sold, or shared.</li>
+                            <li>No account or sign-in is required to use any feature.</li>
+                            <li>No third-party analytics, advertising, or crash-reporting SDKs are embedded.</li>
+                            <li>All calculation results are produced on your device and never leave it.</li>
+                            <li>You can wipe everything KoreVision stores with one tap in Settings, or by deleting the app.</li>
+                        </ul>
+                    </section>
+
+                    <section id="data-we-collect">
+                        <h2>02 · Data we collect</h2>
+                        <p>KoreVision does not collect personal data from you. The only information the app retains lives in your device's local storage and is used solely to make the calculator remember your inputs between launches.</p>
+                        <p>Concretely, the app stores:</p>
+                        <ul>
+                            <li><strong>Numeric inputs</strong> you enter for each dimensionless-number calculator (e.g. density, velocity, length, viscosity, surface tension, heat-transfer coefficient). These are stored in your device's <code>UserDefaults</code> under the key <code>korevision.inputs</code>.</li>
+                            <li><strong>App settings</strong> such as your SI-units preference, haptic-feedback toggle, pulse-animation toggle, and number-format mode (adaptive / scientific / fixed / log). These are stored under standard <code>UserDefaults</code> keys prefixed with <code>settings.</code>.</li>
+                            <li><strong>Optional snapshot images</strong> — only if you explicitly choose to save a snapshot from the Library or Analyzer screen. Snapshots are written to your app's local <code>Documents/snapshots</code> directory and are never exported or transmitted automatically.</li>
+                        </ul>
+                        <p>None of the above is associated with your identity, Apple ID, Apple&nbsp;ID email, device identifier, advertising identifier (IDFA), or any other personal attribute. There is no remote database that mirrors this content.</p>
+                    </section>
+
+                    <section id="data-we-do-not">
+                        <h2>03 · Data we never collect</h2>
+                        <p>To be unambiguous, KoreVision does not collect:</p>
+                        <ul class="x-list">
+                            <li>Your name, email, phone number, address, or contact details.</li>
+                            <li>Your precise or coarse location.</li>
+                            <li>Your contacts, calendar, photos, microphone, or camera data.</li>
+                            <li>Health, biometric, or fitness information.</li>
+                            <li>Purchase history, financial information, or payment data.</li>
+                            <li>Usage analytics, advertising identifiers, or behavioural profiles.</li>
+                            <li>Crash logs, diagnostic dumps, or device fingerprints.</li>
+                        </ul>
+                    </section>
+
+                    <section id="local-storage">
+                        <h2>04 · Local storage details</h2>
+                        <p>Everything KoreVision persists is stored locally using Apple-provided APIs. The app does not use iCloud, CloudKit, or any third-party sync service.</p>
+                        <table class="kv-table">
+                            <thead><tr><th>Data</th><th>Mechanism</th><th>Retention</th></tr></thead>
+                            <tbody>
+                                <tr><td>Calculator inputs</td><td><code>UserDefaults</code> key <code>korevision.inputs</code></td><td>Until you tap "Reset all inputs to defaults" in Settings, or delete the app.</td></tr>
+                                <tr><td>User preferences (SI, haptics, pulse, number format)</td><td><code>UserDefaults</code> keys <code>settings.*</code></td><td>Until you toggle them or delete the app.</td></tr>
+                                <tr><td>Optional snapshot PNGs</td><td>Local file in app <code>Documents/snapshots/</code></td><td>Until you tap "Clear cached values" in Settings, or delete the app.</td></tr>
+                            </tbody>
+                        </table>
+                        <p>If you change devices or reinstall the app, this data is <strong>not</strong> transferred; it lives only on the device it was created on.</p>
+                    </section>
+
+                    <section id="analytics">
+                        <h2>05 · Analytics &amp; tracking</h2>
+                        <p>KoreVision contains <strong>no analytics SDKs</strong> — no Firebase, no Amplitude, no Mixpanel, no Adjust, no AppsFlyer, no Facebook SDK. The app does not perform any background telemetry, A/B testing, or remote configuration calls.</p>
+                        <p>The app does not display advertising and does not integrate the Apple Advertising Identifier (IDFA) or the Limit Ad Tracking signal in any way.</p>
+                        <p>Crash and performance diagnostics, where provided by the operating system itself, are governed by Apple's own privacy controls and are not under the developer's purview.</p>
+                    </section>
+
+                    <section id="third-parties">
+                        <h2>06 · Third-party services</h2>
+                        <p>KoreVision does not embed any third-party SDKs or call any third-party services at runtime. There are no fonts loaded from CDNs, no telemetry endpoints, no remote feature flags, no authentication brokers.</p>
+                        <p>The only network access the app makes is the App Store receipt validation performed by Apple itself when you install or update the app, which is handled entirely by the operating system outside of the app's code.</p>
+                    </section>
+
+                    <section id="children">
+                        <h2>07 · Children's privacy</h2>
+                        <p>KoreVision is an engineering reference tool. It is not directed to children under the age of 13 and does not knowingly collect any personal information from children. Because the app collects no personal information from anyone, this policy applies equally to all users regardless of age.</p>
+                    </section>
+
+                    <section id="your-rights">
+                        <h2>08 · Your rights &amp; controls</h2>
+                        <p>Because KoreVision collects no personal data in the first place, there is nothing for us to export, correct, or delete on your behalf. However, you retain full control over what is stored locally:</p>
+                        <ul>
+                            <li><strong>Reset all inputs:</strong> Settings → Data → "Reset all inputs to defaults". This erases every numeric input and restores the seeded defaults on next launch.</li>
+                            <li><strong>Clear cached values:</strong> Settings → Data → "Clear cached values". This wipes any optional snapshots and the in-memory Process Twin buffer.</li>
+                            <li><strong>Delete the app:</strong> Removing KoreVision from your device deletes every file and preference it created. Nothing is retained on Apple's servers.</li>
+                            <li><strong>Disable haptics:</strong> Settings → Units &amp; Formatting → toggle off "Haptic feedback".</li>
+                            <li><strong>Disable pulse animations:</strong> Settings → Appearance → toggle off "Pulsing indicators".</li>
+                        </ul>
+                    </section>
+
+                    <section id="international">
+                        <h2>09 · International users</h2>
+                        <p>KoreVision does not transfer any user data across borders, because it transfers none at all. The app is designed to comply with the spirit of the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA/CPRA), the UK Data Protection Act, and equivalent regimes by virtue of collecting nothing identifiable.</p>
+                        <p>If you are a regulator, auditor, or enterprise security reviewer and need a data-flow diagram, the answer is one box: <em>your device.</em></p>
+                    </section>
+
+                    <section id="changes">
+                        <h2>10 · Changes to this policy</h2>
+                        <p>If this policy is ever updated, the change will be reflected here with a revised "Last updated" date and shipped with the next release of KoreVision. Material changes that affect what is collected (which today is nothing) would also be surfaced in the Settings screen and the App Store release notes.</p>
+                    </section>
+
+                    <section id="contact">
+                        <h2>11 · Contact</h2>
+                        <p>If you have any questions about this privacy policy or the data-handling behaviour of KoreVision, please reach the developer through the <strong>App Store listing</strong> for this app — the "Support" or "Developer Website" link on the product page is the official channel of contact.</p>
+                        <p>For App&nbsp;Store privacy-label disclosures: KoreVision declares "Data Not Collected" in every category.</p>
+                    </section>
+
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-row">
+            <div class="brand-row">
+                <span class="brand-mark small">K</span>
+                <span>KoreVision</span>
+            </div>
+            <nav class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Use</a>
+                <a href="support.html">Support</a>
+                <a href="index.html#features">Features</a>
+            </nav>
+            <p class="copy">© <span id="year"></span> KoreVision. Multiphase flow analysis in your pocket.</p>
+        </div>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#05060d" />
+    <title>KoreVision — Multiphase Flow Analyzer for iOS</title>
+    <meta name="description" content="KoreVision is a realtime dimensionless-number analyzer for bubbly, slug, churn, annular, mist and dispersed flows. 24 multiphase, interfacial, thermal and transport calculators on iPhone." />
+    <meta name="keywords" content="KoreVision, multiphase flow, dimensionless numbers, Reynolds, Weber, Eötvös, capillary, Nusselt, Prandtl, interfacial dynamics, bubbly flow, slug flow, churn flow, annular flow, mist flow, iOS app" />
+    <meta name="author" content="KoreVision" />
+    <meta property="og:title" content="KoreVision — Multiphase Flow Analyzer" />
+    <meta property="og:description" content="24 dimensionless numbers. Mandhane-style regime map. 3D flow studio. All offline, on-device." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://korevision.app/" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23050610'/%3E%3Ctext x='50%25' y='58%25' font-family='Helvetica' font-size='34' font-weight='800' fill='%2300d4ff' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="cyber-bg"></div>
+
+    <header class="site-header">
+        <div class="container nav-row">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">K</span>
+                <span class="brand-name">KoreVision</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#numbers">Numbers</a>
+                <a href="#modes">Modes</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="support.html">Support</a>
+                <a class="cta-pill" href="#download">Download</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="tag">// MULTIPHASE FLOW · INTERFACIAL DYNAMICS</span>
+                    <h1 class="hero-title">
+                        <span class="grad">KoreVision</span>
+                        <span class="sub">Realtime dimensionless-number analyzer.</span>
+                    </h1>
+                    <p class="hero-lead">
+                        A pocket engineering bench for bubbly, slug, churn, annular, mist
+                        and dispersed flows. Compute 24 dimensionless numbers on-device,
+                        classify flow regimes on a Mandhane-style map, and explore the
+                        parameter space in a 3D studio — without sending a single byte
+                        to the cloud.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a class="btn btn-primary" href="#download">
+                            <span>Get on the App Store</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-5-5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                        <a class="btn btn-ghost" href="#features">See what it does</a>
+                    </div>
+
+                    <ul class="hero-meta">
+                        <li><strong>24</strong><span>dimensionless numbers</span></li>
+                        <li><strong>6</strong><span>flow regimes</span></li>
+                        <li><strong>0</strong><span>network requests</span></li>
+                        <li><strong>iOS 15+</strong><span>iPhone &amp; iPad</span></li>
+                    </ul>
+                </div>
+
+                <div class="hero-phone" aria-hidden="true">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="phone-status"><span>9:41</span><span>KOREVISION</span></div>
+                            <div class="phone-card">
+                                <div class="phone-card-row">
+                                    <span class="pill pill-re">REYNOLDS</span>
+                                    <span class="phone-card-value">7.5e+04</span>
+                                </div>
+                                <div class="phone-card-sub">log₁₀ = 4.88 · Large</div>
+                            </div>
+                            <div class="phone-card">
+                                <div class="phone-card-row">
+                                    <span class="pill pill-eo">EÖTVÖS</span>
+                                    <span class="phone-card-value">1.22e+00</span>
+                                </div>
+                                <div class="phone-card-sub">log₁₀ = 0.09 · Moderate</div>
+                            </div>
+                            <div class="phone-card">
+                                <div class="phone-card-row">
+                                    <span class="pill pill-we">WEBER</span>
+                                    <span class="phone-card-value">6.25e+02</span>
+                                </div>
+                                <div class="phone-card-sub">log₁₀ = 2.80 · Moderate</div>
+                            </div>
+                            <div class="phone-card">
+                                <div class="phone-card-row">
+                                    <span class="pill pill-ca">CAPILLARY</span>
+                                    <span class="phone-card-value">2.08e-04</span>
+                                </div>
+                                <div class="phone-card-sub">log₁₀ = -3.68 · Very small</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-glow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section id="features" class="section">
+            <div class="container">
+                <header class="section-head">
+                    <span class="kicker">01 · Capabilities</span>
+                    <h2>Built for engineers, by engineers.</h2>
+                    <p>Every feature is offline, on-device and free of analytics. Designed for quick parametric studies at the desk, in the lab, or in the field.</p>
+                </header>
+
+                <div class="grid features-grid">
+                    <article class="feature-card accent-re">
+                        <div class="feature-icon">⚡</div>
+                        <h3>24 dimensionless numbers</h3>
+                        <p>Reynolds, Eötvös, Morton, Weber, Froude, Ohnesorge, Capillary, Bond, Nusselt, Prandtl, Grashof, Peclet, Biot, Fourier, Rayleigh, Damköhler, Kirpichev, Jacob, Stokes, Particle Reynolds, Power, Flow Ratio, Void Fraction, Slip Ratio.</p>
+                    </article>
+                    <article class="feature-card accent-eo">
+                        <div class="feature-icon">🧭</div>
+                        <h3>Mandhane regime map</h3>
+                        <p>A horizontal two-phase flow map (U<sub>sl</sub> vs U<sub>sg</sub>) classifying bubbly, slug, churn, annular, mist and dispersed patterns at a glance.</p>
+                    </article>
+                    <article class="feature-card accent-we">
+                        <div class="feature-icon">🧊</div>
+                        <h3>3D Flow Studio</h3>
+                        <p>Visualise regime transitions across the three most diagnostic numbers (Re, Eo, We) in an interactive 3D studio with selectable axes.</p>
+                    </article>
+                    <article class="feature-card accent-ca">
+                        <div class="feature-icon">📡</div>
+                        <h3>Regime Analyzer</h3>
+                        <p>Probe specific operating points, see which regimes are within range, and inspect how each dimensionless number responds as you sweep a parameter.</p>
+                    </article>
+                    <article class="feature-card accent-amber">
+                        <div class="feature-icon">📚</div>
+                        <h3>Reference library</h3>
+                        <p>Every number ships with formula, plain-English summary, significance, applicable regimes and category — Interfacial, Multiphase, Capillary, Momentum, Thermal, Transport.</p>
+                    </article>
+                    <article class="feature-card accent-coral">
+                        <div class="feature-icon">🔒</div>
+                        <h3>100% on-device</h3>
+                        <p>No accounts, no ads, no analytics, no telemetry. Inputs live in your local UserDefaults and can be wiped from Settings at any time.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- NUMBERS -->
+        <section id="numbers" class="section section-alt">
+            <div class="container">
+                <header class="section-head">
+                    <span class="kicker">02 · The catalog</span>
+                    <h2>Twenty-four numbers, one tap away.</h2>
+                    <p>Each calculator accepts physics-realistic defaults so it is useful straight after install, and offers adaptive, scientific, fixed or logarithmic number formatting.</p>
+                </header>
+
+                <div class="numbers-grid">
+                    <div class="num-block">
+                        <h4>Interfacial</h4>
+                        <ul>
+                            <li>Reynolds — Re = ρUL/μ</li>
+                            <li>Eötvös — Eo = Δρgd²/σ</li>
+                            <li>Morton — Mo = gμ⁴Δρ / (ρ²σ³)</li>
+                            <li>Weber — We = ρU²L/σ</li>
+                            <li>Froude — Fr = U / √(gL)</li>
+                            <li>Ohnesorge — Oh = μ / √(ρσL)</li>
+                        </ul>
+                    </div>
+                    <div class="num-block">
+                        <h4>Capillary &amp; Multiphase</h4>
+                        <ul>
+                            <li>Capillary — Ca = μU/σ</li>
+                            <li>Bond — Bo = ΔρgL²/σ</li>
+                            <li>Gas/Liquid flow ratio</li>
+                            <li>Void fraction — α = A<sub>g</sub>/A<sub>t</sub></li>
+                            <li>Slip ratio</li>
+                            <li>Particle Reynolds</li>
+                        </ul>
+                    </div>
+                    <div class="num-block">
+                        <h4>Thermal</h4>
+                        <ul>
+                            <li>Nusselt — Nu = hL/k</li>
+                            <li>Prandtl — Pr = μc<sub>p</sub>/k</li>
+                            <li>Grashof — Gr = gβΔTL³ρ²/μ²</li>
+                            <li>Peclet — Pe = ρc<sub>p</sub>UL/k</li>
+                            <li>Biot — Bi = hL/k</li>
+                            <li>Fourier — Fo = αt/L²</li>
+                        </ul>
+                    </div>
+                    <div class="num-block">
+                        <h4>Transport &amp; Mixing</h4>
+                        <ul>
+                            <li>Rayleigh — Ra = gβΔTL³ / (μα)</li>
+                            <li>Damköhler — Da = kτ</li>
+                            <li>Kirpichev — Ki = hμc<sub>p</sub>/(kΔT)</li>
+                            <li>Jacob — Ja = c<sub>p,l</sub>ΔT/h<sub>fg</sub></li>
+                            <li>Stokes — Stk = ρ<sub>p</sub>d<sub>p</sub>²U / (18μL)</li>
+                            <li>Power — Po = P / (ρn³D⁵)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODES / REGIMES -->
+        <section id="modes" class="section">
+            <div class="container">
+                <header class="section-head">
+                    <span class="kicker">03 · Flow regimes</span>
+                    <h2>Six regimes, one map.</h2>
+                    <p>Each dimensionless number is annotated with the regimes it informs. The regime map and 3D studio visualise how they overlap.</p>
+                </header>
+
+                <div class="regime-grid">
+                    <div class="regime-card bubbly"><span>Bubbly</span><p>Discrete bubbles dispersed in continuous liquid. Eötvös ≲ 1, low gas superficial velocity.</p></div>
+                    <div class="regime-card slug"><span>Slug</span><p>Large bullet-shaped Taylor bubbles alternating with liquid slugs — typical of pipeline flows.</p></div>
+                    <div class="regime-card churn"><span>Churn</span><p>Unstable oscillatory flow with high interfacial agitation; transitional between slug and annular.</p></div>
+                    <div class="regime-card annular"><span>Annular</span><p>Liquid film on the wall, gas core in the centre. High momentum, high Weber.</p></div>
+                    <div class="regime-card mist"><span>Mist</span><p>Entrained droplets carried by a high-velocity gas stream. We &gt;&gt; We<sub>crit</sub>.</p></div>
+                    <div class="regime-card dispersed"><span>Dispersed</span><p>Fine droplets or particles dispersed uniformly in the carrier phase.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRIVACY PILLARS -->
+        <section id="privacy" class="section section-alt">
+            <div class="container privacy-grid">
+                <div>
+                    <span class="kicker">04 · Privacy by default</span>
+                    <h2>Your inputs never leave your phone.</h2>
+                    <p>KoreVision is engineered to collect nothing. There are no analytics SDKs, no advertising identifiers, no crash-reporting beacons, no remote configuration calls.</p>
+                    <p>The values you type are persisted only in the local <code>UserDefaults</code> of your device so the calculator can recall them across launches. Resetting inputs or removing the app erases them entirely.</p>
+                    <a class="link-arrow" href="privacy.html">Read the full privacy policy →</a>
+                </div>
+                <div class="privacy-side">
+                    <div class="pp-card">
+                        <h4>What we store</h4>
+                        <ul>
+                            <li>The numeric inputs you enter for each calculator.</li>
+                            <li>Optional snapshot PNGs you choose to save locally.</li>
+                            <li>Your settings (SI mode, haptics, pulse, number format).</li>
+                        </ul>
+                    </div>
+                    <div class="pp-card">
+                        <h4>What we never do</h4>
+                        <ul>
+                            <li>No account creation or sign-in.</li>
+                            <li>No third-party trackers or ad networks.</li>
+                            <li>No background telemetry.</li>
+                            <li>No transmission of your inputs.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOWNLOAD -->
+        <section id="download" class="section cta-section">
+            <div class="container cta-card">
+                <h2>Bring the bench to the field.</h2>
+                <p>Download KoreVision for iPhone and iPad. iOS 15 or later. Optimised for both light and dark mode; designed portrait.</p>
+                <a class="btn btn-primary big" href="#">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16.365 1.43c0 1.14-.493 2.27-1.177 3.08-.744.9-1.99 1.57-2.987 1.57-.12-1.14.43-2.27 1.1-3.04.776-.88 2.123-1.54 3.064-1.61zM21.16 17.55c-.65 1.49-1.04 2.16-1.94 3.49-1.26 1.86-3.04 4.18-5.25 4.2-1.96.02-2.46-1.28-5.11-1.27-2.65.01-3.2 1.29-5.16 1.27-2.21-.02-3.89-2.12-5.15-3.98C-.66 16.7-1.07 10.78 1.04 7.99c1.5-1.99 3.87-3.16 6.08-3.16 2.25 0 3.66 1.24 5.52 1.24 1.81 0 2.91-1.24 5.49-1.24 2.05 0 4.22 1.12 5.76 3.05-5.06 2.77-4.24 9.99.27 9.67z"/></svg>
+                    <span>App Store</span>
+                </a>
+                <p class="muted small">iOS 15.0 or later · iPhone &amp; iPad</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-row">
+            <div class="brand-row">
+                <span class="brand-mark small">K</span>
+                <span>KoreVision</span>
+            </div>
+            <nav class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Use</a>
+                <a href="support.html">Support</a>
+                <a href="index.html#features">Features</a>
+            </nav>
+            <p class="copy">© <span id="year"></span> KoreVision. Multiphase flow analysis in your pocket.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
